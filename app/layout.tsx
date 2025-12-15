@@ -53,6 +53,33 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Tahir Rafique",
+  "jobTitle": "Full Stack Developer & Software Engineer",
+  "description": "Experienced Full Stack Developer specializing in MERN stack development and React Native mobile applications",
+  "knowsAbout": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "React Native",
+    "Node.js",
+    "MongoDB",
+    "Express.js",
+    "Full Stack Development",
+    "Mobile App Development",
+    "Web Development"
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Freelance Software Engineer",
+    "occupationLocation": {
+      "@type": "Place",
+      "name": "Remote, Islamabad Pakistan"
+    }
+  }
+};
 
 export default function RootLayout({
   children,
@@ -61,6 +88,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
