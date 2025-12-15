@@ -14,12 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tahir Rafique - Full Stack Developer | MERN Stack Expert | Mobile & Web Development",
-  description: "Experienced Full Stack Developer and Freelance Software Engineer specializing in MERN stack development (MongoDB, Express.js, React, Node.js). Expert in building scalable web applications and cross-platform mobile apps using React Native. Offering professional JavaScript/TypeScript development services with a focus on modern, responsive, and high-performance solutions. Available for freelance projects including custom web development, mobile app development, API integration, database design, and end-to-end software engineering solutions.",
+  description: "Experienced Full Stack Developer and Freelance Software Engineer specializing in MERN stack development (MongoDB, Express.js, React, Node.js) and Next.js. Expert in building scalable web applications and cross-platform mobile apps using React Native. Offering professional JavaScript/TypeScript development services with a focus on modern, responsive, and high-performance solutions. Available for freelance projects including custom web development, mobile app development, API integration, database design, and end-to-end software engineering solutions.",
   keywords: [
     "Full Stack Developer",
     "MERN Stack Developer",
     "Freelance Software Engineer",
     "React Developer",
+    "Next.js Developer",
     "React Native Developer",
     "Node.js Developer",
     "JavaScript Developer",
@@ -58,7 +59,7 @@ const structuredData = {
   "@type": "Person",
   "name": "Tahir Rafique",
   "jobTitle": "Full Stack Developer & Software Engineer",
-  "description": "Experienced Full Stack Developer specializing in MERN stack development and React Native mobile applications",
+  "description": "Experienced Full Stack Developer specializing in MERN stack development and Next.js also expert in React Native mobile applications",
   "knowsAbout": [
     "JavaScript",
     "TypeScript",
@@ -67,13 +68,17 @@ const structuredData = {
     "Node.js",
     "MongoDB",
     "Express.js",
-    "Full Stack Development",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "React Native Developer",
+    "Full Stack Developer",
     "Mobile App Development",
     "Web Development"
   ],
   "hasOccupation": {
     "@type": "Occupation",
-    "name": "Freelance Software Engineer",
+    "name": "Freelance Software Engineer (Full Stack Developer)",
     "occupationLocation": {
       "@type": "Place",
       "name": "Remote, Islamabad Pakistan"
