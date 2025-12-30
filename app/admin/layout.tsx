@@ -1,0 +1,17 @@
+'use client'
+import React from 'react'
+import AdminSidebar from '@/components/layout/adminSidebar'
+import { useAdminContext } from '@/hooks/useAdminContext';
+
+export default function AdminLayout({ children }) {
+    const { adminNavLink, setAdminNavLink, openAdminSidebar, setOpenAdminSidebar } = useAdminContext();
+
+    return (
+        <div className='w-svw h-svh flex gap-2.5 p-3 bg-indigo-50'>
+            <AdminSidebar />
+            <div className={`w-full max-lg:pl-[100px] ${openAdminSidebar ? 'w-full max-lg:pl-[100px] lg:max-w-[calc(100%-110px)]' : 'w-full! lg:max-w-[calc(100%-310px)]'}`}>
+                {children}
+            </div>
+        </div>
+    )
+}

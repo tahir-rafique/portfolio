@@ -1,0 +1,15 @@
+// types/context.types.ts
+import { Dispatch, SetStateAction } from "react";
+
+export interface AdminContextType {
+    adminNavLink: string;
+    setAdminNavLink: Dispatch<SetStateAction<string>>;
+
+    openAdminSidebar: boolean;
+    setOpenAdminSidebar: Dispatch<SetStateAction<boolean>>;
+    //     ❌ What NOT to do
+
+    // Typing it like this limits functionality:
+
+    // (open: boolean) => void ❌❌❌
+}
