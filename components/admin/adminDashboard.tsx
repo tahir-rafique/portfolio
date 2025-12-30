@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function AdminDashboard() {
-    return (
-        <div className=' h-full w-full'>
-            <h1 className=' text-[clamp(2rem,6vw,2.2rem)] font-semibold'>Admin Dashboard</h1>
-        </div>
-    )
+  return (
+    <div className="h-full w-full min-w-[400px]">
+      <h1 className="text-[clamp(1rem,6vw,1.8rem)] font-medium leading-[110%]">
+        Admin Dashboard
+      </h1>
+    </div>
+  );
 }

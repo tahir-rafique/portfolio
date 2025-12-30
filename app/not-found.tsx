@@ -21,8 +21,20 @@ const NotFound = () => {
               viewBox="0 0 100 100"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30%] xs:w-[35%] sm:w-[40%] md:w-[45%] lg:w-1/2 h-auto"
             >
-              <circle cx="35" cy="40" r="8" fill="currentColor" className="text-text" />
-              <circle cx="65" cy="40" r="8" fill="currentColor" className="text-text" />
+              <circle
+                cx="35"
+                cy="40"
+                r="8"
+                fill="currentColor"
+                className="text-text"
+              />
+              <circle
+                cx="65"
+                cy="40"
+                r="8"
+                fill="currentColor"
+                className="text-text"
+              />
               <path
                 d="M30 70 Q50 85 70 70"
                 stroke="currentColor"
@@ -42,8 +54,8 @@ const NotFound = () => {
         </h1>
 
         <p className="text-base xs:text-lg text-text/80 max-w-[90%] xs:max-w-md mx-auto">
-          The page you&apos;re looking for seems to have wandered off. Perhaps it&apos;s on a
-          digital vacation?
+          The page you&apos;re looking for seems to have wandered off. Perhaps
+          it&apos;s on a digital vacation?
         </p>
 
         <div className="mt-4 sm:mt-6 md:mt-8 w-full xs:w-auto">
@@ -51,7 +63,9 @@ const NotFound = () => {
             onClick={() => router.push("/")}
             className="w-fit xs:w-auto px-6 sm:px-8 py-2 sm:py-4 bg-pri text-pri-text rounded-full font-medium text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90 relative overflow-hidden group"
           >
-            <span className="relative z-10 group-hover:text-pri">Return Home</span>
+            <span className="relative z-10 group-hover:text-pri">
+              Return Home
+            </span>
             <span className="absolute inset-0 w-0 bg-bg bg-opacity-30 transition-all duration-300 group-hover:w-full"></span>
           </button>
         </div>

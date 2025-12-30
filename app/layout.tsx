@@ -1,7 +1,9 @@
-import AdminContextProvider from "@/context/adminContextProvider";
+import { satoshi, inter } from "@/fonts/fonts";
 import "../styles/globals.css";
-import { satoshi, inter } from "@/fonts/fonts"
+import React from "react";
+import AdminContextProvider from "@/context/adminContextProvider";
 import type { Metadata } from "next";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://tahir-rafique.vercel.app/"),
 
@@ -117,9 +119,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${satoshi.variable} ${inter.variable} antialiased`}>
-        <AdminContextProvider>
-          {children}
-        </AdminContextProvider>
+        <AdminContextProvider>{children}</AdminContextProvider>
       </body>
     </html>
   );

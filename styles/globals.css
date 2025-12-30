@@ -1,40 +1,37 @@
-@import 'tailwindcss';
-
+@import "tailwindcss";
 
 :root {
-
-    primary: #ffee;
+  primary: #ffee;
 }
 
 @theme {
-    --breakpoint-xs: 375px;
-    /* Small mobile (iPhone SE, older Android phones) */
-    --breakpoint-sm: 640px;
-    /* Large mobile / small tablet (iPhone Pro Max, standard phones in landscape) */
-    --breakpoint-md: 768px;
-    /* Tablet portrait (iPad, Android tablets) */
-    --breakpoint-lg: 1024px;
-    /* Tablet landscape / small laptop (iPad Pro, small laptops) */
-    --breakpoint-xl: 1280px;
-    /* Laptop / desktop (13-15" laptops, smaller desktops) */
-    --breakpoint-2xl: 1536px;
-    /* Large desktop (larger monitors, 1440p screens) */
-    --breakpoint-3xl: 1920px;
-    /* Extra large desktop (Full HD and 4K monitors) */
+  --breakpoint-xs: 375px;
+  /* Small mobile (iPhone SE, older Android phones) */
+  --breakpoint-sm: 640px;
+  /* Large mobile / small tablet (iPhone Pro Max, standard phones in landscape) */
+  --breakpoint-md: 768px;
+  /* Tablet portrait (iPad, Android tablets) */
+  --breakpoint-lg: 1024px;
+  /* Tablet landscape / small laptop (iPad Pro, small laptops) */
+  --breakpoint-xl: 1280px;
+  /* Laptop / desktop (13-15" laptops, smaller desktops) */
+  --breakpoint-2xl: 1536px;
+  /* Large desktop (larger monitors, 1440p screens) */
+  --breakpoint-3xl: 1920px;
+  /* Extra large desktop (Full HD and 4K monitors) */
 
-    --font-inter: var(--font-inter);
-    --font-satoshi: var(--font-satoshi);
+  --font-inter: var(--font-inter);
+  --font-satoshi: var(--font-satoshi);
 
+  --radius-primary: 8px;
+  --radius-secondary: 12px;
+  --radius-tertiary: 16px;
 
-    --radius-primary: 8px;
-    --radius-secondary: 12px;
-    --radius-tertiary: 16px;
-
-    /* --shadow-primary:  */
-    /* --shadow-secondary:  */
-    /* --shadow-primary:  */
+  /* --shadow-primary:  */
+  /* --shadow-secondary:  */
+  /* --shadow-primary:  */
 }
 
 body {
-    font-family: var(--font-satoshi);
+  font-family: var(--font-satoshi);
 }

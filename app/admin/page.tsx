@@ -28,30 +28,29 @@
 //     )
 // }
 
-
 //  improved Logic ✅🕐
-"use client"
-import { useAdminContext } from '@/hooks/useAdminContext'
-import AdminDashboard from '@/components/admin/adminDashboard';
-import AdminProfile from '@/components/admin/adminProfile';
-import AdminAnalytics from '@/components/admin/adminAnalytics';
-import AdminSettings from '@/components/admin/adminSettings';
+"use client";
+import { useAdminContext } from "@/hooks/useAdminContext";
+import AdminDashboard from "@/components/admin/adminDashboard";
+import AdminProfile from "@/components/admin/adminProfile";
+import AdminAnalytics from "@/components/admin/adminAnalytics";
+import AdminSettings from "@/components/admin/adminSettings";
 
 const ADMIN_COMPONENTS: Record<string, React.ComponentType> = {
-    Dashboard: AdminDashboard,
-    Profile: AdminProfile,
-    Analytics: AdminAnalytics,
-    Setting: AdminSettings,
-}
+  Dashboard: AdminDashboard,
+  Profile: AdminProfile,
+  Analytics: AdminAnalytics,
+  Setting: AdminSettings,
+};
 
 export default function Page() {
-    const { adminNavLink } = useAdminContext();
+  const { adminNavLink } = useAdminContext();
 
-    const ActiveComponent = ADMIN_COMPONENTS[adminNavLink] || AdminDashboard;
+  const ActiveComponent = ADMIN_COMPONENTS[adminNavLink] || AdminDashboard;
 
-    return (
-        <div className='h-full w-full bg-indigo-100 rounded-2xl py-2 px-4'>
-            <ActiveComponent />
-        </div>
-    )
+  return (
+    <div className="h-full w-full bg-indigo-100 rounded-2xl p-3 sm:p-4 overflow-x-auto">
+      <ActiveComponent />
+    </div>
+  );
 }

@@ -1,8 +1,8 @@
 // types/icon.types.ts
-import { LucideIcon } from 'lucide-react'
+import { LucideIcon } from "lucide-react";
 
 export interface IconTypes {
-    iconName: LucideIcon;  
-    className?: string;
-    onClick?: () => void;
+  iconName: LucideIcon;
+  className?: string;
+  onClick?: () => void;
 }

@@ -1,3 +1,3 @@
 // types/index.ts
-export * from './context.types'
-export * from './component.types'
+export * from "./context.types";
+export * from "./component.types";
