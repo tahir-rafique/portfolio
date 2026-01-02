@@ -1,44 +1,50 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, FC, ChangeEvent, KeyboardEvent } from "react";
 import Modal from "@mui/material/Modal";
 import Link from "next/link";
 import { Eye, EyeOff } from "lucide-react";
 import CustomIcon from "@/components/shared/customIcon";
+import {
+  AdminAuthModalProps,
+  PasswordInputFormProps,
+  SuccessMessageProps,
+  ErrorMessageProps,
+} from "@/types";
 
 const ADMIN_PASSWORD = "Sheikh101@#$";
 
-export default function AdminAuthModal({ open, setOpen }) {
-  const [adminPassword, setAdminPassword] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
+const AdminAuthModal: FC<AdminAuthModalProps> = ({ open, setOpen }) => {
+  const [adminPassword, setAdminPassword] = useState<string>("");
+  const [submitted, setSubmitted] = useState<boolean>(false);
+  const [isCorrect, setIsCorrect] = useState<boolean>(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
 
-  const handlePasswordChange = (e) => {
+  const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setAdminPassword(e.target.value);
   };
 
-  const handleTogglePassword = () => {
+  const handleTogglePassword = (): void => {
     setShowPassword((prev) => !prev);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (): void => {
     const passwordIsCorrect = adminPassword === ADMIN_PASSWORD;
     setSubmitted(true);
     setIsCorrect(passwordIsCorrect);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setOpen(false);
     resetForm();
   };
 
-  const handleTryAgain = () => {
+  const handleTryAgain = (): void => {
     setSubmitted(false);
     setAdminPassword("");
     setShowPassword(false);
   };
 
-  const resetForm = () => {
+  const resetForm = (): void => {
     setAdminPassword("");
     setSubmitted(false);
     setIsCorrect(false);
@@ -53,7 +59,7 @@ export default function AdminAuthModal({ open, setOpen }) {
       aria-describedby="modal-description"
       className="flex justify-center items-center"
     >
-      <div className="bg-background border border-primary shadow-md p-6 sm:p-10 w-full max-w-[500px] rounded-secondary flex flex-col gap-10 m-2">
+      <div className="bg-background border border-primary shadow-md p-10 w-full max-w-[500px] rounded-secondary flex flex-col gap-10">
         <h2 id="modal-title" className="text-3xl font-bold text-center">
           Only for Admin!
         </h2>
@@ -80,16 +86,16 @@ export default function AdminAuthModal({ open, setOpen }) {
       </div>
     </Modal>
   );
-}
+};
 
-function PasswordInputForm({
+const PasswordInputForm: FC<PasswordInputFormProps> = ({
   adminPassword,
   showPassword,
   onPasswordChange,
   onTogglePassword,
   onSubmit,
-}) {
-  const handleKeyPress = (e) => {
+}) => {
+  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === "Enter") {
       onSubmit();
     }
@@ -101,7 +107,7 @@ function PasswordInputForm({
         <input
           type={showPassword ? "text" : "password"}
           placeholder="Enter Admin Password"
-          className="outline-none border border-gray-300 p-2 rounded-primary w-full px-4 pr-10 focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+          className="outline-none border border-gray-300 p-2 rounded-primary w-full px-4 pr-10 focus:border-primary focus:ring-1 focus: ring-primary transition-colors"
           value={adminPassword}
           onChange={onPasswordChange}
           onKeyPress={handleKeyPress}
@@ -111,28 +117,28 @@ function PasswordInputForm({
         <button
           type="button"
           onClick={onTogglePassword}
-          className="cursor-pointer absolute right-3 top-1/2 -translate-y-1/2 p-1 transition-all duration-200"
+          className="cursor-pointer absolute right-3 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-200 rounded transition-all duration-200"
           aria-label={showPassword ? "Hide password" : "Show password"}
         >
           <CustomIcon
             iconName={showPassword ? EyeOff : Eye}
-            className="size-5 text-text-heading"
+            className="size-5 text-gray-600 hover:text-gray-800"
           />
         </button>
       </div>
 
       <button
         onClick={onSubmit}
-        className="bg-primary p-3 rounded-secondary text-center text-base font-semibold leading-[110%] cursor-pointer hover:opacity-90 active:scale-95 transition-all"
+        className="bg-primary p-3 rounded-secondary text-center text-base font-semibold leading-[110%] cursor-pointer hover: opacity-90 active:scale-95 transition-all"
         type="button"
       >
         Submit
       </button>
     </div>
   );
-}
+};
 
-function SuccessMessage({ onClose }) {
+const SuccessMessage: FC<SuccessMessageProps> = ({ onClose }) => {
   return (
     <>
       <p className="text-green-600 font-semibold my-1 flex items-center gap-2">
@@ -147,9 +153,9 @@ function SuccessMessage({ onClose }) {
       </Link>
     </>
   );
-}
+};
 
-function ErrorMessage({ onTryAgain }) {
+const ErrorMessage: FC<ErrorMessageProps> = ({ onTryAgain }) => {
   return (
     <>
       <p className="text-red-600 font-semibold my-1 flex items-center gap-2">
@@ -164,4 +170,6 @@ function ErrorMessage({ onTryAgain }) {
       </button>
     </>
   );
-}
+};
+
+export default AdminAuthModal;
