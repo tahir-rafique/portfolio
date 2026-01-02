@@ -1,7 +1,6 @@
-// components/IconComponent.tsx
 import { IconTypes } from "@/types";
 
-export default function IconComponent({
+export default function CustomIcon({
   iconName: CustomIcon,
   className = "",
   onClick,

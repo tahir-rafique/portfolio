@@ -6,9 +6,9 @@ const NotFound = () => {
   const router = useRouter();
 
   return (
-    <div className="flex-col-center min-h-dvh w-full overflow-hidden relative p-4 px-3 sm:px-4 md:px-6">
+    <div className="flex flex-col justify-center min-h-dvh w-full overflow-hidden relative p-4 px-3 sm:px-4 md:px-6 bg-background">
       {/* Main 404 content */}
-      <div className="z-10 flex-col-center gap-4 xs:gap-6 sm:gap-8 max-w-xs xs:max-w-sm sm:max-w-md md:max-w-xl mx-auto text-center">
+      <div className="z-10 flex-col-center gap-4 xs:gap-6 sm:gap-8 max-w-xs xs:max-w-sm sm:max-w-md md:max-w-xl mx-auto text-center text-primary">
         <div className="flex items-center justify-center gap-1 xs:gap-2 sm:gap-4 my-4 sm:my-6">
           <span className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-pri">
             4
@@ -61,7 +61,7 @@ const NotFound = () => {
         <div className="mt-4 sm:mt-6 md:mt-8 w-full xs:w-auto">
           <button
             onClick={() => router.push("/")}
-            className="w-fit xs:w-auto px-6 sm:px-8 py-2 sm:py-4 bg-pri text-pri-text rounded-full font-medium text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90 relative overflow-hidden group"
+            className="w-fit xs:w-auto px-6 sm:px-8 py-2 sm:py-4 bg-pri text-pri-text rounded-full font-medium text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90 relative overflow-hidden group cursor-pointer"
           >
             <span className="relative z-10 group-hover:text-pri">
               Return Home

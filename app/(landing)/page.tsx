@@ -1,15 +1,15 @@
 import React from "react";
+import Navbar from "@/components/layout/navbar";
 
 export default function page() {
   return (
-    <div className="min-h-screen min-w-screen bg-violet-400 flex justify-center items-center">
-      <h1 className=" font-inter text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-center font-stretch-expanded">
-        Coming Soon
-      </h1>
-
-      <h1 className=" font-satoshi font-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  text-center font-stretch-expanded">
-        Coming Soon
-      </h1>
-    </div>
+    <main
+      aria-label="home-main-page"
+      className="min-h-screen min-w-screen h-full w-full bg-background overflow-y-auto"
+    >
+      <div className="container">
+        <Navbar />
+      </div>
+    </main>
   );
 }

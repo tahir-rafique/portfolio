@@ -1,5 +1,6 @@
 import { LayoutDashboard, User, BarChart3, Settings } from "lucide-react";
 
+//    ----------    Admin Data   -----------  //
 const AdminData = {
   adminSidebarLinks: [
     {
@@ -25,4 +26,28 @@ const AdminData = {
   ],
 };
 
-export { AdminData };
+//    ----------    Landing Page Data   -----------  //
+
+const LandingPageData = {
+  //   landing/navbar
+  navLinks: [
+    {
+      id: 1,
+      label: "Home",
+    },
+    {
+      id: 2,
+      label: "Blogs",
+    },
+    {
+      id: 3,
+      label: "Analytics",
+    },
+    {
+      id: 4,
+      label: "Setting",
+    },
+  ],
+};
+
+export { AdminData, LandingPageData };

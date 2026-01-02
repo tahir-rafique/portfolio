@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import React from "react";
 import AdminContextProvider from "@/context/adminContextProvider";
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/context/themeContext";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tahir-rafique.vercel.app/"),
@@ -118,8 +119,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={`${satoshi.variable} ${inter.variable} antialiased`}>
-        <AdminContextProvider>{children}</AdminContextProvider>
+      <body
+        className={`${satoshi.variable} ${inter.variable} antialiased`}
+        suppressHydrationWarning={false}
+      >
+        <ThemeProvider>
+          <AdminContextProvider>{children}</AdminContextProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

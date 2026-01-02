@@ -5,5 +5,5 @@ export default function LandingLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return <div className="h-svh w-svw">{children}</div>;
 }

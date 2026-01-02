@@ -9,10 +9,14 @@ export default function AdminLayout({
   const { openAdminSidebar } = useAdminContext();
 
   return (
-    <div className="w-svw h-svh flex gap-2.5 p-3 bg-indigo-50">
+    <div className="w-svw h-svh flex gap-2.5 p-3 bg-[#A78BFA]">
       <AdminSidebar />
       <div
-        className={`w-full h-full max-lg:pl-[100px] ${openAdminSidebar ? "w-full max-lg:pl-[100px] lg:max-w-[calc(100%-110px)]" : "w-full! lg:max-w-[calc(100%-310px)]"} `}
+        className={`w-full h-full max-lg:pl-[100px]${
+          openAdminSidebar
+            ? "w-full max-lg:pl-[100px] lg:max-w-[calc(100%-110px)]"
+            : "w-full! lg:max-w-[calc(100%-260px)]"
+        } `}
       >
         {children}
       </div>
