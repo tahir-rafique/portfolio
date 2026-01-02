@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact us",
+    "consultation": "Book Consultation",
+    "ar_badge": "AR"
+  },
+  "hero": {
+    "subtitle": "A digital partner you can rely on",
+    "title": "Digital solutions to enhance businesses across various sectors",
+    "description": "A trusted technology partner with Alibaba Cloud Saudi Arabia",
+    "primaryButton": "Get in touch",
+    "secondaryButton": "Company profile"
+  },
+  "services": {
+    "title": "Our services",
+    "card1": {
+      "title": "Implementation of Smart Oracle Projects",
+      "description": "We deliver Oracle ERP / Cloud / Analytics projects for government entities and large enterprises, integrating an embedded Operational Intelligence Layer (AI Layer) within the system to enhance efficiency and accelerate decision-making.",
+      "link": "Show more"
+    },
+    "card2": {
+      "title": "IT Consultation",
+      "description": "PDPL/NCA compliant, with no continuous data transfer outside the environment.",
+      "link": "Show more"
+    },
+    "card3": {
+      "title": "Network Solutions & Implementation",
+      "description": "AI is embedded within the system — not an external tool.",
+      "link": "Show more"
+    },
+    "card4": {
+      "title": "Computing & Calculation",
+      "description": "Real-time operational recommendations (collections, procurement, inventory).",
+      "link": "Show more"
+    }
+  },
+  "slopedMenu": {
+    "styleGuides": "Style Guides",
+    "abTesting": "A / B Testing",
+    "userPersonas": "User personas",
+    "userStories": "User Stories"
+  },
+  "mechanism": {
+    "header": "How we work",
+    "subHeader": "The mechanism of action that we follow outside the scope",
+    "step1": {
+      "title": "Understanding Requirements",
+      "description": "We listen to and discuss the necessary requirements for implementing and developing your project."
+    },
+    "step2": {
+      "title": "We study and analyze.",
+      "description": "We conduct a study, analysis, and planning of the necessary workflow."
+    },
+    "step3": {
+      "title": "We design and develop.",
+      "description": "We carry out the necessary design, programming, and development for the project."
+    },
+    "step4": {
+      "title": "We test and deliver.",
+      "description": "We test the implemented programs and deliver them to the client."
+    }
+  },
+  "products": {
+    "header": "Our Product",
+    "jazzam": "Jazzam",
+    "wafer": "Wafer",
+    "description": "Whether you are a teacher, student, presenter, marketer, or influencer, our tools help you create content that makes your work easier, saves you time, and enhances the quality of your services.",
+    "jazzamDescription": "Whether you are a teacher, student, presenter, marketer, or influencer, our tools help you create content that makes your work easier, saves you time, and enhances the quality of your services.",
+    "waferDescription": "Whether you are a teacher, student, presenter, marketer, or influencer, our tools help you create content that makes your work easier, saves you time, and enhances the quality of your services.",
+    "button": "learn more"
+  },
+  "feedback": {
+    "header": "Feedback",
+    "title": "What Our Clients Say",
+    "clientName": "Lucas Digne",
+    "clientPosition": "Partner & CEO, Telecommunication Company",
+    "text1": "“We encountered a problem with processing big data and after only 1 week, iteck's Experts provided perfect",
+    "text2": "IT Solutions, fast process & affordable price we are really satisfied!”"
+  },
+  "contact": {
+    "header": "Contact Us",
+    "name": "Name",
+    "namePlaceholder": "Write the Name",
+    "email": "Email",
+    "emailPlaceholder": "omar@gmail.com",
+    "message": "Message",
+    "messagePlaceholder": "Write the Message",
+    "send": "Send",
+    "alert": {
+      "name": "Please enter your name",
+      "email": "Please enter a valid email address",
+      "message": "Message should be at least 5 characters"
+    }
+  },
+  "footer": {
+    "about": "Over 25 years working in IT services developing software applications and mobile apps for clients all over the world. For your very specific industry, we have highly-tailored IT solutions.",
+    "emailLabel": "Your email",
+    "subscribe": "Subscribe",
+    "usefulLinks": {
+      "title": "Useful Links",
+      "home": "Home",
+      "about": "About Iteck",
+      "projects": "Projects",
+      "howItWorks": "How it works",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "itConsultation": "IT Consultation",
+      "softwareDevelopment": "Software Development",
+      "aiMachineLearning": "AI Machine Learning",
+      "dataSecurity": "Data Security"
+    },
+    "information": {
+      "title": "Information",
+      "shipping": "Shipping Policy",
+      "returns": "Returns & Refunds",
+      "cookies": "Cookies Policy",
+      "faq": "Frequently asked"
+    }
+  }
+}

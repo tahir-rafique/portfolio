@@ -1,65 +1,86 @@
+import { satoshi, inter } from "@/fonts/fonts";
+import "../styles/globals.css";
+import React from "react";
+import AdminContextProvider from "@/context/adminContextProvider";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "../styles/globals.css"
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { ThemeProvider } from "@/context/themeContext";
 
 export const metadata: Metadata = {
-  title: "Tahir Rafique - Full Stack Developer | MERN Stack Expert | Mobile & Web Development",
-  description: "Experienced Full Stack Developer and Freelance Software Engineer specializing in MERN stack development (MongoDB, Express.js, React, Node.js). Expert in building scalable web applications and cross-platform mobile apps using React Native. Offering professional JavaScript/TypeScript development services with a focus on modern, responsive, and high-performance solutions. Available for freelance projects including custom web development, mobile app development, API integration, database design, and end-to-end software engineering solutions.",
+  metadataBase: new URL("https://tahir-rafique.vercel.app/"),
+
+  title: {
+    default:
+      "Tahir Rafique | Full Stack Developer (MERN, Next.js, React Native)",
+    template: "%s | Tahir Rafique",
+  },
+
+  description:
+    "Full Stack Developer specializing in MERN Stack, Next.js, and React Native. I build fast, scalable, and secure web and mobile applications for startups and businesses worldwide.",
+
   keywords: [
+    "Tahir Rafique",
     "Full Stack Developer",
     "MERN Stack Developer",
-    "Freelance Software Engineer",
-    "React Developer",
+    "Next.js Developer",
+    "React.js Developer",
     "React Native Developer",
     "Node.js Developer",
     "JavaScript Developer",
     "TypeScript Developer",
-    "MongoDB Expert",
-    "Express.js Developer",
+    "Freelance Software Engineer",
+    "Freelance Developer",
     "Mobile App Developer",
-    "Web Application Development",
-    "Cross-Platform Development",
-    "API Development",
+    "Web Developer",
     "Frontend Developer",
     "Backend Developer",
-    "Freelance Web Developer",
-    "Custom Software Development",
-    "Tahir Rafique"
   ],
+
   authors: [{ name: "Tahir Rafique" }],
-  openGraph: {
-    title: "Tahir Rafique - Full Stack Developer | MERN Stack Expert",
-    description: "Professional Full Stack Developer specializing in MERN stack, React Native mobile development, and modern web applications. Available for freelance projects.",
-    type: "website",
-    locale: "en_US",
+
+  alternates: {
+    canonical: "https://tahir-rafique.vercel.app/",
   },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
+
+  openGraph: {
+    title: "Tahir Rafique | Full Stack Developer",
+    description:
+      "MERN Stack & React Native Developer building modern, high-performance web and mobile applications.",
+    url: "https://yourdomain.com",
+    siteName: "Tahir Rafique Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+
   twitter: {
     card: "summary_large_image",
-    title: "Tahir Rafique - Full Stack Developer",
-    description: "Expert MERN Stack Developer & Mobile App Engineer. Building scalable web and mobile solutions.",
+    title: "Tahir Rafique | Full Stack Developer",
+    description:
+      "Full Stack Developer (MERN, Next.js, React Native). Available for freelance projects.",
   },
+
   icons: {
-    icon: "./favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Tahir Rafique",
-  "jobTitle": "Full Stack Developer & Software Engineer",
-  "description": "Experienced Full Stack Developer specializing in MERN stack development and React Native mobile applications",
-  "knowsAbout": [
+  name: "Tahir Rafique",
+  jobTitle: "Full Stack Developer & Software Engineer",
+  description:
+    "Experienced Full Stack Developer specializing in MERN stack development and Next.js also expert in React Native mobile applications",
+  knowsAbout: [
     "JavaScript",
     "TypeScript",
     "React",
@@ -67,18 +88,22 @@ const structuredData = {
     "Node.js",
     "MongoDB",
     "Express.js",
-    "Full Stack Development",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "React Native Developer",
+    "Full Stack Developer",
     "Mobile App Development",
-    "Web Development"
+    "Web Development",
   ],
-  "hasOccupation": {
+  hasOccupation: {
     "@type": "Occupation",
-    "name": "Freelance Software Engineer",
-    "occupationLocation": {
+    name: "Freelance Developer (Full Stack Developer)",
+    occupationLocation: {
       "@type": "Place",
-      "name": "Remote, Islamabad Pakistan"
-    }
-  }
+      name: "Remote, Islamabad Pakistan",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -95,9 +120,12 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${satoshi.variable} ${inter.variable} antialiased`}
+        suppressHydrationWarning={false}
       >
-        {children}
+        <ThemeProvider>
+          <AdminContextProvider>{children}</AdminContextProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

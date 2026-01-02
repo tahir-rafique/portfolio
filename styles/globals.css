@@ -1,1 +1,73 @@
 @import "tailwindcss";
+
+:root {
+  --background: #e0e7ff;
+  --primary: #ff5c73;
+  --text-heading: #090085;
+  --text-subheading: #333;
+  --accent: #fbbf24;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+}
+
+/* Dark mode colors */
+.dark {
+  --background: #202020;
+  --primary: #ff5c73;
+  --text-heading: #f8fafc;
+  --text-subheading: #cbd5e1;
+  --accent: #fbbf24;
+  --surface: #1a1a2e;
+  --border: #2d2d44;
+}
+
+@theme {
+  /* fonts */
+  --font-inter: var(--font-inter);
+  --font-satoshi: var(--font-satoshi);
+
+  /* container */
+  --container-width-main: 1200px;
+
+  /* breakpoints */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+
+  /* colors */
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-text-heading: var(--text-heading);
+  --color-text-subheading: var(--text-subheading);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+
+  /* border-radius */
+  --radius-primary: 10px;
+  --radius-secondary: 14px;
+
+  /* shadow */
+  --shadow-primary: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+}
+
+body {
+  font-family: var(--font-satoshi);
+  color: var(--text-heading);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width-main);
+  margin: 0 auto;
+  padding: 0 20px;
+}
