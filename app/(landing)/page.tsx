@@ -1,10 +1,10 @@
 import React from "react";
 import { MyParticle } from "@/components/ui/MyParticle";
-import LandingHero from "@/components/ui/landing/LandingHero";
-import Skills from "@/components/ui/landing/Skills";
-import WorkExperience from "@/components/ui/landing/WorkExperience";
-import Projects from "@/components/ui/landing/Projects";
-import ContactDetails from "@/components/ui/landing/ContactDetails";
+import LandingHero from "@/components/landing/LandingHero";
+import WorkExperience from "@/components/landing/WorkExperience";
+import Skills from "@/components/landing/Skills";
+import Projects from "@/components/landing/Projects";
+import ContactDetails from "@/components/landing/ContactDetails";
 
 export default function page() {
   return (

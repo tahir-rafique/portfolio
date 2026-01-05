@@ -1,8 +1,8 @@
 import React from "react";
-import TitleText from "../TitleText";
 import { PenTool } from "lucide-react";
 import { LandingPageData } from "@/data";
 import Image from "next/image";
+import TitleText from "../ui/TitleText";
 
 export default function Skills() {
   return (

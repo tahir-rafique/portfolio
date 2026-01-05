@@ -1,5 +1,5 @@
 import React from "react";
-import TitleText from "../TitleText";
+import TitleText from "../ui/TitleText";
 import { PenTool } from "lucide-react";
 
 export default function Projects() {

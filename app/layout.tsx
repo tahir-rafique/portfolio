@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tahir-rafique.vercel.app/"),
 
   title: {
-    default:
-      "Tahir Rafique | Full Stack Developer (MERN, Next.js, React Native)",
+    default: "Tahir Rafique |Frontend Engineer (MERN, Next.js, React Native)",
     template: "%s | Tahir Rafique",
   },
 

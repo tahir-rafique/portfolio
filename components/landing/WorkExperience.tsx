@@ -1,6 +1,6 @@
 import React from "react";
-import TitleText from "../TitleText";
 import { BriefcaseBusiness, PenTool } from "lucide-react";
+import TitleText from "../ui/TitleText";
 
 export default function WorkExperience() {
   return (
