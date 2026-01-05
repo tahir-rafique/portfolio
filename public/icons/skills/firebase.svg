@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 351" width="64" height="64">
+  <defs>
+    <linearGradient id="firebase-gradient1" x1="49.994%" x2="49.994%" y1="97.671%" y2="0%">
+      <stop offset="0%" stop-color="#FFA000"/>
+      <stop offset="100%" stop-color="#F57C00"/>
+    </linearGradient>
+    <linearGradient id="firebase-gradient2" x1="49.999%" x2="49.999%" y1="99.028%" y2="0%">
+      <stop offset="0%" stop-color="#F57C00" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#F57C00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="#FFA000" d="M1.253 280.732l1.605-3.131 99.353-188.518-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188L1.253 280.732z"/>
+  <path fill="#F57C00" d="M134.417 148.974l32.039-32.812-32.039-61.007c-3.042-5.791-10.433-6.398-13.443-.59l-17.705 34.109-.53 1.744 31.678 58.556z"/>
+  <path fill="#FFCA28" d="M134.417 148.974L102.072 93.26l-97.719 187.472c3.039 5.81 10.433 6.398 13.443.59l116.621-132.348z"/>
+  <path fill="url(#firebase-gradient1)" d="M206.601 93.26c2.807-5.624-.647-12.15-6.468-12.15h-25.662l32.13 61.007z"/>
+  <path fill="url(#firebase-gradient2)" d="M134.417 148.974L102.072 93.26l-97.719 187.472c3.039 5.81 10.433 6.398 13.443.59l116.621-132.348z"/>
+</svg>

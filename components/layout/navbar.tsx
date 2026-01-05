@@ -1,14 +1,33 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LandingPageData } from "@/data";
 import ThemeChangeButton from "../ui/ThemeChangeButton";
 import AdminAuthModal from "@/modals/adminAuthModal";
 
 export default function Navbar() {
   const [openAdminAuthModal, setOpenAdminAuthModal] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.pageYOffset >= 10);
+    };
+    // Add scroll listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav aria-label="navbar" className="flex items-center justify-between py-4">
+    <nav
+      aria-label="navbar"
+      className={`container flex items-center justify-between sticky top-4 z-999 py-4! rounded-secondary transition-all duration-800 ease-in-out ${
+        scrolled
+          ? "bg-background/80 border  border-gray-50 shadow-primary scale-[0.90]"
+          : "scale-100"
+      }`}
+    >
       <h1 className="text-[clamp(0.8rem,5vw,1.6rem)] font-medium leading-[110%]">
         Tahir Rafique
       </h1>

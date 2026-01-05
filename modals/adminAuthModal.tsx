@@ -57,7 +57,7 @@ const AdminAuthModal: FC<AdminAuthModalProps> = ({ open, setOpen }) => {
       onClose={handleClose}
       aria-labelledby="modal-title"
       aria-describedby="modal-description"
-      className="flex justify-center items-center"
+      className="flex justify-center items-center m-2"
     >
       <div className="bg-background border border-primary shadow-md p-10 w-full max-w-[500px] rounded-secondary flex flex-col gap-10">
         <h2 id="modal-title" className="text-3xl font-bold text-center">
@@ -117,12 +117,12 @@ const PasswordInputForm: FC<PasswordInputFormProps> = ({
         <button
           type="button"
           onClick={onTogglePassword}
-          className="cursor-pointer absolute right-3 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-200 rounded transition-all duration-200"
+          className="cursor-pointer absolute right-3 top-1/2 -translate-y-1/2 p-1  rounded transition-all duration-200"
           aria-label={showPassword ? "Hide password" : "Show password"}
         >
           <CustomIcon
             iconName={showPassword ? EyeOff : Eye}
-            className="size-5 text-gray-600 hover:text-gray-800"
+            className="size-5 text-text-heading"
           />
         </button>
       </div>

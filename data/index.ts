@@ -41,11 +41,83 @@ const LandingPageData = {
     },
     {
       id: 3,
-      label: "Analytics",
+      label: "Components",
+    },
+    // {
+    //   id: 4,
+    //   label: "Setting",
+    // },
+  ],
+  skills: [
+    {
+      id: 1,
+      icon: "",
+      label: "HTML",
+    },
+    {
+      id: 2,
+      icon: "",
+      label: "CSS",
+    },
+    {
+      id: 3,
+      icon: "",
+      label: "TAILWIND CSS",
     },
     {
       id: 4,
-      label: "Setting",
+      icon: "",
+      label: "SCSS/SASS",
+    },
+    {
+      id: 5,
+      icon: "",
+      label: "JAVASCRIPT",
+    },
+    {
+      id: 6,
+      icon: "",
+      label: "TYPESCRIPT",
+    },
+    {
+      id: 7,
+      icon: "",
+      label: "REACT",
+    },
+    {
+      id: 8,
+      icon: "",
+      label: "NEXT.JS",
+    },
+    {
+      id: 9,
+      icon: "",
+      label: "MUI",
+    },
+    {
+      id: 10,
+      icon: "",
+      label: "ANT DESIGN",
+    },
+    {
+      id: 11,
+      icon: "",
+      label: "FIGMA",
+    },
+    {
+      id: 12,
+      icon: "",
+      label: "JEST",
+    },
+    {
+      id: 13,
+      icon: "",
+      label: "FIREBASE",
+    },
+    {
+      id: 14,
+      icon: "",
+      label: "SUPABASE",
     },
   ],
 };
