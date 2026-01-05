@@ -1,7 +1,13 @@
 import React from "react";
+import { LucideIcon } from "lucide-react";
 import CustomIcon from "../shared/customIcon";
 
-export default function TitleText({ title = "titile", icon }) {
+interface TitleTextProps {
+  title?: string;
+  icon: LucideIcon;
+}
+
+export default function TitleText({ title = "titile", icon }: TitleTextProps) {
   return (
     <div className=" flex items-center gap-3 text-primary">
       <h1 className="text-4xl font-black">{title}</h1>
