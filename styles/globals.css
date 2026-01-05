@@ -60,6 +60,9 @@
     border-color 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
 }
 
+img {
+  user-select: none !important;
+}
 body {
   font-family: var(--font-satoshi);
   color: var(--text-heading);

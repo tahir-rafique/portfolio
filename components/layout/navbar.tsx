@@ -22,15 +22,18 @@ export default function Navbar() {
   return (
     <nav
       aria-label="navbar"
-      className={`container flex items-center justify-between sticky top-4 z-999 py-4! rounded-secondary transition-all duration-800 ease-in-out ${
+      className={`container flex items-center justify-between sticky top-4 z-999 py-4! rounded-secondary transition-all duration-10800 ease-out ${
         scrolled
-          ? "bg-background/80 border  border-gray-50 shadow-primary scale-[0.90]"
-          : "scale-100"
+          ? " bg-background/80 border  shadow-primary"
+          : " border border-transparent!"
       }`}
     >
-      <h1 className="text-[clamp(0.8rem,5vw,1.6rem)] font-medium leading-[110%]">
-        Tahir Rafique
-      </h1>
+      <div className="flex items-end">
+        <h1 className="text-[clamp(0.8rem,5vw,1.6rem)] font-black leading-[110%] capitalize">
+          TahirRafique
+        </h1>
+        <span className="block h-2 w-2 bg-primary rounded-full" />
+      </div>
 
       <ul className="flex items-center gap-4">
         {LandingPageData.navLinks.map((navlink) => (
@@ -43,7 +46,7 @@ export default function Navbar() {
         <button
           aria-label="toggle-to-admin-page"
           onClick={() => setOpenAdminAuthModal(true)}
-          className="bg-primary py-1 px-3 rounded-primary text-white font-semibold cursor-pointer hover:shadow-sm transition-all duration-100 hover:bg-primary/70 hover:text-text-heading "
+          className="bg-primary py-1 px-3 rounded-primary text-white font-semibold cursor-pointer hover:shadow-sm transition-all duration-100 hover:bg-primary/70 hover:text-text-heading"
         >
           <span>Admin</span>
         </button>

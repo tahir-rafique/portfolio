@@ -120,7 +120,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${satoshi.variable} ${inter.variable} antialiased bg-background`}
+        className={`${satoshi.variable} ${inter.variable} antialiased bg-background select-none!`}
         suppressHydrationWarning
       >
         <ThemeProvider>
