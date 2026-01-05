@@ -1,3 +1,4 @@
+import Navbar from "@/components/layout/navbar";
 import React from "react";
 
 export default function LandingLayout({
@@ -5,5 +6,10 @@ export default function LandingLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="h-svh w-svw">{children}</div>;
+  return (
+    <div className="h-full w-full bg-background">
+      <Navbar />
+      {children}
+    </div>
+  );
 }

@@ -10,6 +10,7 @@ export default function ThemeChangeButton() {
   return (
     <button
       onClick={toggleTheme}
+      onMouseDown={() => new Audio("/sounds/click.wav").play()}
       className="cursor-pointer transition-all duration-100  scale-90 hover:scale-100"
       aria-label="toggle theme button"
     >

@@ -49,7 +49,7 @@ export default function Page() {
   const ActiveComponent = ADMIN_COMPONENTS[adminNavLink] || AdminDashboard;
 
   return (
-    <div className="h-full w-full bg-background rounded-secondary p-3 sm:p-4 overflow-x-auto">
+    <div className="h-full w-full bg-background rounded-secondary border border-white p-3 sm:p-4 overflow-x-auto">
       <ActiveComponent />
     </div>
   );

@@ -41,11 +41,83 @@ const LandingPageData = {
     },
     {
       id: 3,
-      label: "Analytics",
+      label: "Components",
+    },
+    // {
+    //   id: 4,
+    //   label: "Setting",
+    // },
+  ],
+  skills: [
+    {
+      id: 1,
+      icon: "/icons/skills/html.svg",
+      label: "HTML",
+    },
+    {
+      id: 2,
+      icon: "/icons/skills/css.svg",
+      label: "CSS",
+    },
+    {
+      id: 3,
+      icon: "/icons/skills/tailwind.svg",
+      label: "TAILWIND CSS",
     },
     {
       id: 4,
-      label: "Setting",
+      icon: "/icons/skills/sass.svg",
+      label: "SCSS/SASS",
+    },
+    {
+      id: 5,
+      icon: "/icons/skills/javascript.svg",
+      label: "JAVASCRIPT",
+    },
+    {
+      id: 6,
+      icon: "/icons/skills/typescript.svg",
+      label: "TYPESCRIPT",
+    },
+    {
+      id: 7,
+      icon: "/icons/skills/react.svg",
+      label: "REACT",
+    },
+    {
+      id: 8,
+      icon: "/icons/skills/nextjs.svg",
+      label: "NEXT.JS",
+    },
+    {
+      id: 9,
+      icon: "/icons/skills/mui.svg",
+      label: "MUI",
+    },
+    {
+      id: 10,
+      icon: "/icons/skills/antdesign.svg",
+      label: "ANT DESIGN",
+    },
+    {
+      id: 11,
+      icon: "/icons/skills/figma.svg",
+      label: "FIGMA",
+    },
+    {
+      id: 12,
+      icon: "/icons/skills/jest.svg",
+      label: "JEST",
+    },
+    {
+      id: 13,
+      icon: "/icons/skills/firebase.svg",
+      label: "FIREBASE",
+    },
+    {
+      id: 14,
+      icon: "/icons/skills/supabase.svg",
+      label: "SUPABASE",
     },
   ],
 };
