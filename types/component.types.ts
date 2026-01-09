@@ -37,3 +37,14 @@ export interface AdminAuthState {
   isCorrect: boolean;
   showPassword: boolean;
 }
+
+// types/button.tsx
+export interface ButtonProps {
+  text: string;
+  loading?: boolean;
+  disabled?: boolean;
+  variant?: "primary" | "secondary";
+  iconImgStart?: string;
+  iconImgEnd?: string;
+  iconClass?: string;
+}

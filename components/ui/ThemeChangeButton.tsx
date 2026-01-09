@@ -15,9 +15,9 @@ export default function ThemeChangeButton() {
       aria-label="toggle theme button"
     >
       {theme === "light" ? (
-        <CustomIcon iconName={Moon} className="size-6" />
-      ) : (
         <CustomIcon iconName={Sun} className="size-6 " />
+      ) : (
+        <CustomIcon iconName={Moon} className="size-6" />
       )}
     </button>
   );

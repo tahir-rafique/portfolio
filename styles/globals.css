@@ -53,6 +53,14 @@
 
   /* shadow */
   --shadow-primary: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+
+  /* gradient */
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+/* gradient */
+.primaryGradient {
+  background: var(--gradient-primary);
 }
 
 * {
@@ -63,9 +71,12 @@
 img {
   user-select: none !important;
 }
+
 body {
   font-family: var(--font-satoshi);
   color: var(--text-heading);
+  cursor: url('/images/cursor.png') 2 2, auto !important;
+  /* Custom cursor size must be less then 128x128 ✅*/
 }
 
 .container {

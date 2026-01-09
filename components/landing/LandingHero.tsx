@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "../shared/button";
 
 export default function LandingHero() {
   return (
@@ -19,8 +20,9 @@ export default function LandingHero() {
           Hello, I'm
         </p>
 
-        <h1 className=" text-center font-bold text-5xl  text-text-heading leading-[170%]">
-          Tahir Rafique
+        <h1 className=" text-center font-black text-5xl  text-text-heading leading-[170%]">
+          Tahir Rafique{" "}
+          <span className="ml-2 border-l-3 border-primary animate-[pulse_1s_infinite]" />
         </h1>
       </div>
 
@@ -30,9 +32,9 @@ export default function LandingHero() {
         like React, React Native, Figma, Blender etc.
       </p>
 
-
-      <div>
-        
+      <div className=" flex justify-center items-center gap-4">
+        <Button text="Download CV" variant="secondary" />
+        {/* <Button text="Download CV" /> */}
       </div>
     </section>
   );
