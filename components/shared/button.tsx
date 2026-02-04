@@ -3,6 +3,8 @@ import Image from "next/image";
 import { ButtonProps } from "@/types";
 
 export default function Button({
+  onClick,
+  className,
   text,
   loading = false,
   disabled = false,
@@ -13,23 +15,24 @@ export default function Button({
 }: ButtonProps) {
   const getVariantClasses = () => {
     const baseClasses =
-      "font-bold py-2 px-4 rounded flex items-center justify-center gap-2 disabled:cursor-not-allowed";
+      "font-bold py-2 px-4 rounded flex items-center justify-center gap-2 disabled:cursor-not-allowed cursor-pointer transition-all duration-100";
 
     if (variant === "primary") {
-      return `${baseClasses} bg-blue-500 hover:bg-blue-700 disabled:bg-gray-400 text-white`;
+      return `${baseClasses} bg-blue-500 hover:bg-blue-700! disabled:bg-gray-400 text-white`;
     } else {
-      return `${baseClasses} bg-gray-200 hover:bg-gray-300 disabled:bg-gray-100 text-gray-800 disabled:text-gray-400 border border-gray-300`;
+      return `${baseClasses} bg-gray-200 hover:bg-gray-300! disabled:bg-gray-100 text-gray-800 disabled:text-gray-400 border border-gray-300`;
     }
   };
 
   return (
     <button
-      className={`${getVariantClasses()} ${loading ? "cursor-wait" : ""}`}
+      onClick={onClick}
+      className={` ${getVariantClasses()} ${className} ${loading ? "cursor-wait" : ""}`}
       disabled={disabled || loading}
     >
       {loading && (
         <svg
-          className="animate-spin h-4 w-4"
+          className=" animate-spin h-4 w-4"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

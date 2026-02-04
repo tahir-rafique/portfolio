@@ -55,7 +55,7 @@
   --shadow-primary: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 
   /* gradient */
-  --gradient-primary: linear-gradient(135deg, var(--primary), var(--accent));
+  --gradient-primary: linear-gradient(39deg, #e0e7ff 70%, #202020 100%);
 }
 
 /* gradient */

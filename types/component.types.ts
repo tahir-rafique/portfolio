@@ -47,4 +47,6 @@ export interface ButtonProps {
   iconImgStart?: string;
   iconImgEnd?: string;
   iconClass?: string;
+  onClick?: () => void;
+  className?: string;
 }

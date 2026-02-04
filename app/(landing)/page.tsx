@@ -15,7 +15,7 @@ export default function page() {
       </div>
 
       {/* Content Layer */}
-      <div className="container flex flex-col gap-6 sm:gap-8">
+      <div className="container  relative z-10 flex flex-col gap-6 sm:gap-8">
         <LandingHero />
         <WorkExperience />
         <Skills />
