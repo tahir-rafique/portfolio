@@ -75,7 +75,7 @@ img {
 body {
   font-family: var(--font-satoshi);
   color: var(--text-heading);
-  cursor: url('/images/cursor.png') 2 2, auto !important;
+  cursor: url('/icons/grab-hand-cursor.svg') 4 4, auto !important;
   /* Custom cursor size must be less then 128x128 ✅*/
 }
 
@@ -89,6 +89,7 @@ body {
 /*              Custom Scrollbar              */
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {

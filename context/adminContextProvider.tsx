@@ -1,4 +1,4 @@
-// contexts/AdminContext.tsx
+// contexts/adminContextProvider.tsx
 "use client";
 import { createContext, useState, ReactNode } from "react";
 import { AdminContextType } from "@/types";

@@ -11,12 +11,11 @@ export default function LandingHero() {
           src={"/images/TahirImage.png"}
           fill
           alt="tahir-image"
-          className=" absolute"
         />
       </div>
 
       <div className=" space-y-2">
-        <p className=" text-text-heading font-inter font-bold text-center text-2xl">
+        <p className=" text-primary font-inter font-bold text-center text-2xl">
           Hello, I'm
         </p>
 
@@ -27,7 +26,7 @@ export default function LandingHero() {
       </div>
 
       <p className="text-2xl font-inter text-center">
-        A passionate Frontend Engineer with 11 years of experience in designing
+        A passionate Frontend Engineer with 2 years of experience in designing
         and developing web & mobile applications using tools and technologies
         like React, React Native, Figma, Blender etc.
       </p>

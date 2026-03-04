@@ -50,3 +50,17 @@ export interface ButtonProps {
   onClick?: () => void;
   className?: string;
 }
+
+// types/titleText.tsx
+export interface TitleTextProps {
+  title?: string;
+  icon: LucideIcon;
+}
+
+
+
+// types/paraText.tsx
+export interface ParaTextProps {
+  text: string;
+  className?: string;
+}

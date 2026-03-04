@@ -1,6 +1,8 @@
-import { LayoutDashboard, User, BarChart3, Settings } from "lucide-react";
+import { LayoutDashboard, User, BarChart3, Settings, Mail, Linkedin, Instagram, Github } from "lucide-react";
 
-//    ---------------------------------    Admin Data   -----------------------------------------  //
+//    ---------------------------------    
+//            Admin Data  
+//  ----------------------------------- 
 const AdminData = {
   adminSidebarLinks: [
     {
@@ -26,9 +28,15 @@ const AdminData = {
   ],
 };
 
-//    -------------------------------------------    Landing Page Data   ----------------------------------------  //
+//    ---------------------------------------    
+//              Landing Page Data 
+//   ---------------------------------------- 
 
 const LandingPageData = {
+
+
+  // landing-page
+
   //   landing/navbar
   navLinks: [
     {
@@ -48,6 +56,8 @@ const LandingPageData = {
     //   label: "Setting",
     // },
   ],
+
+  //   landing/skills
   skills: [
     {
       id: 1,
@@ -120,6 +130,32 @@ const LandingPageData = {
       label: "SUPABASE",
     },
   ],
+
+  //   landing/contact-details
+  contactPlatforms: [
+    {
+      id: 1,
+      icon: Mail,
+      href: "/",
+    },
+    {
+      id: 2,
+      icon: Linkedin,
+      href: "/",
+    },
+    {
+      id: 3,
+      icon: Instagram,
+      href: "/",
+    },
+
+    {
+      id: 4,
+      icon: Github,
+      href: "/",
+    },
+
+  ]
 };
 
 export { AdminData, LandingPageData };
