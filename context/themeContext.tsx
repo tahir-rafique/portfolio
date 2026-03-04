@@ -1,3 +1,4 @@
+// contexts/themeContext.tsx
 "use client";
 import { createContext, useState, useEffect, ReactNode } from "react";
 import { Theme, ThemeContextType } from "@/types";
@@ -12,7 +13,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
-
     const savedTheme = localStorage.getItem("theme") as Theme;
     const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
       .matches

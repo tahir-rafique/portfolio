@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "../shared/button";
 
 export default function LandingHero() {
   return (
@@ -10,29 +11,29 @@ export default function LandingHero() {
           src={"/images/TahirImage.png"}
           fill
           alt="tahir-image"
-          className=" absolute"
         />
       </div>
 
       <div className=" space-y-2">
-        <p className=" text-text-heading font-inter font-bold text-center text-2xl">
+        <p className=" text-primary font-inter font-bold text-center text-2xl">
           Hello, I'm
         </p>
 
-        <h1 className=" text-center font-bold text-5xl  text-text-heading leading-[170%]">
-          Tahir Rafique
+        <h1 className=" text-center font-black text-5xl  text-text-heading leading-[170%]">
+          Tahir Rafique{" "}
+          <span className="ml-2 border-l-3 border-primary animate-[pulse_1s_infinite]" />
         </h1>
       </div>
 
       <p className="text-2xl font-inter text-center">
-        A passionate Frontend Engineer with 11 years of experience in designing
+        A passionate Frontend Engineer with 2 years of experience in designing
         and developing web & mobile applications using tools and technologies
         like React, React Native, Figma, Blender etc.
       </p>
 
-
-      <div>
-        
+      <div className=" flex justify-center items-center gap-4">
+        <Button text="Download CV" variant="secondary" />
+        {/* <Button text="Download CV" /> */}
       </div>
     </section>
   );

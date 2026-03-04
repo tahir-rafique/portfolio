@@ -61,7 +61,7 @@ const NotFound = () => {
         <div className="mt-4 sm:mt-6 md:mt-8 w-full xs:w-auto">
           <button
             onClick={() => router.push("/")}
-            className="w-fit xs:w-auto px-6 sm:px-8 py-2 sm:py-4 bg-pri text-pri-text rounded-full font-medium text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90 relative overflow-hidden group cursor-pointer"
+            className="w-fit xs:w-auto px-6 sm:px-8 py-2 sm:py-4 bg-pri text-pri-text rounded-full font-medium text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90 relative overflow-hidden group cursor-pointer select-none"
           >
             <span className="relative z-10 group-hover:text-pri">
               Return Home

@@ -17,7 +17,7 @@ export default function Skills() {
         {LandingPageData.skills.map((skill) => (
           <div
             key={skill.id}
-            className={`relative group flex flex-col items-center justify-center gap-3 cursor-pointer bg-border hover:bg-border/80  p-3 py-4 rounded-secondary shadow-primary`}
+            className={`relative group flex flex-col items-center justify-center gap-3  bg-border hover:bg-border/80  p-3 py-4 rounded-secondary shadow-primary`}
           >
             <Image src={skill.icon} height={60} width={60} alt={skill.label} />
             <span className="text-center text-base font-medium uppercase leading-[170%]">
