@@ -101,6 +101,11 @@ const LandingPageData = {
     },
     {
       id: 9,
+      icon: "/icons/skills/redux.svg",
+      label: "REDUX",
+    },
+    {
+      id: 10,
       icon: "/icons/skills/mui.svg",
       label: "MUI",
     },
@@ -118,6 +123,11 @@ const LandingPageData = {
       id: 12,
       icon: "/icons/skills/jest.svg",
       label: "JEST",
+    },
+    {
+      id: 12,
+      icon: "/icons/skills/rtl.png",
+      label: "RTL",
     },
     {
       id: 13,
