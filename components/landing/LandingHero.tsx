@@ -26,7 +26,7 @@ export default function LandingHero() {
       </div>
 
       <p className="text-2xl font-inter text-center">
-        A passionate Frontend Engineer with 2 years of experience in designing
+        A passionate Frontend Engineer with 3 years of experience in designing
         and developing web & mobile applications using tools and technologies
         like React, React Native, Figma, Blender etc.
       </p>
