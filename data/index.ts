@@ -126,7 +126,7 @@ const LandingPageData = {
     },
     {
       id: 12,
-      icon: "/icons/skills/rtl.png",
+      icon: "/icons/skills/react-testing-libarary.svg",
       label: "RTL",
     },
     {
