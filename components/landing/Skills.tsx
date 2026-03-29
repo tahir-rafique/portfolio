@@ -6,7 +6,10 @@ import TitleText from "../ui/TitleText";
 
 export default function Skills() {
   return (
-    <div className=" flex flex-col gap-6">
+    <section
+      aria-label="skills"
+      className=" flex flex-col gap-6"
+    >
       <TitleText title="Skills" icon={PenTool} />
       <p className="text-2xl">
         While I'm always eager to explore new tools and technologies, Following
@@ -26,6 +29,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

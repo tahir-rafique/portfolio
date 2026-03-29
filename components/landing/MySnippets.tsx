@@ -4,8 +4,11 @@ import { PenTool } from 'lucide-react'
 
 export default function MySnippets() {
     return (
-        <div>
-            <TitleText title="Recent Projects" icon={PenTool} />
-        </div>
+        <section
+            aria-label="my snippets"
+            className="flex flex-col gap-6"
+        >
+            <TitleText title="My Snippets" icon={PenTool} />
+        </section>
     )
 }
