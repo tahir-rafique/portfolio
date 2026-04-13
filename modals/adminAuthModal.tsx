@@ -3,7 +3,7 @@ import React, { useState, FC, ChangeEvent, KeyboardEvent } from "react";
 import Modal from "@mui/material/Modal";
 import Link from "next/link";
 import { Eye, EyeOff } from "lucide-react";
-import CustomIcon from "@/components/shared/customIcon";
+import CustomIcon from "@/components/shared/CustomIcon";
 import {
   AdminAuthModalProps,
   PasswordInputFormProps,

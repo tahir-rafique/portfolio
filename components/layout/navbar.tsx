@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { LandingPageData } from "@/data";
 import ThemeChangeButton from "../ui/ThemeChangeButton";
 import AdminAuthModal from "@/modals/adminAuthModal";
-import Button from "../shared/button";
+import Button from "../shared/Button";
 
 export default function Navbar() {
   const [openAdminAuthModal, setOpenAdminAuthModal] = useState(false);

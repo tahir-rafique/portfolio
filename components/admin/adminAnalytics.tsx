@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AdminAnalytics() {
   return (
     <div className="h-full w-full min-w-[400px]">

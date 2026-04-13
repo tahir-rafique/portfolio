@@ -1,4 +1,3 @@
-import React from "react";
 import { MyParticle } from "@/components/ui/MyParticle";
 import LandingHero from "@/components/landing/LandingHero";
 import WorkExperience from "@/components/landing/WorkExperience";
@@ -8,7 +7,7 @@ import ContactDetails from "@/components/landing/ContactDetails";
 import Certification from "@/components/landing/Certification";
 import Education from "@/components/landing/Education";
 
-export default function page() {
+export default function Page() {
   return (
     <main aria-label="landing-page" className="relative">
       {/* Particle Background */}
@@ -29,3 +28,4 @@ export default function page() {
     </main>
   );
 }
+

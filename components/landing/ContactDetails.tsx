@@ -3,7 +3,7 @@ import Link from "next/link";
 import TitleText from "../ui/TitleText";
 import { ContactRound } from "lucide-react";
 import { LandingPageData } from "@/data";
-import ParaText from "../ui/ParaText";
+import ParaText from "../ui/Paratexts";
 
 export default function ContactDetails() {
   return (
@@ -16,7 +16,7 @@ export default function ContactDetails() {
         icon={ContactRound}
       />
       <ParaText
-        text={`I’m always open to new opportunities, collaborations, or just a good conversation. Whether you have a project in mind, need a creative partner, or want to discuss the latest in tech, I’d love to hear from you.`}
+        text={`I'm always open to new opportunities, collaborations, or just a good conversation. Whether you have a project in mind, need a creative partner, or want to discuss the latest in tech, I'd love to hear from you.`}
       />
       <div className="flex items-center gap-14">
         {LandingPageData.contactPlatforms.map((platform) => (

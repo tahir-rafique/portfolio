@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AdminSettings() {
   return (
     <div className="h-full w-full min-w-[400px]">

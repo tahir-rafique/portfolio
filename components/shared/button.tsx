@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ButtonProps } from "@/types";
 import { Badge } from "lucide-react";
-import CustomIcon from "./customIcon";
+import CustomIcon from "./CustomIcon";
 
 export default function Button({
   onClick,

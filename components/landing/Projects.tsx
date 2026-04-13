@@ -1,4 +1,3 @@
-import React from "react";
 import TitleText from "../ui/TitleText";
 import { PenTool } from "lucide-react";
 

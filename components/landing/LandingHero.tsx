@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../shared/button";
+import Button from "../shared/Button";
 
 export default function LandingHero() {
   return (

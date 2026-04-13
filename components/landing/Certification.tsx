@@ -3,7 +3,7 @@ import Link from "next/link";
 import TitleText from "../ui/TitleText";
 import { BriefcaseBusiness, ContactRound } from "lucide-react";
 import { LandingPageData } from "@/data";
-import ParaText from "../ui/ParaText";
+import ParaText from "../ui/Paratexts";
 
 export default function Certification() {
   return (

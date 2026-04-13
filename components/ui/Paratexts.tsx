@@ -1,4 +1,3 @@
-import React from 'react'
 import { ParaTextProps } from '@/types/component.types'
 
 export default function ParaText({ text, className }: ParaTextProps) {

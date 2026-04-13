@@ -1,5 +1,4 @@
-import React from "react";
-import CustomIcon from "../shared/customIcon";
+import CustomIcon from "../shared/CustomIcon";
 import { TitleTextProps } from "@/types/component.types";
 
 

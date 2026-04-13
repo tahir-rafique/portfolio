@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
 import { useThemeContext } from "@/hooks/useThemeContext";
 import { Moon, Sun } from "lucide-react";
-import CustomIcon from "../shared/customIcon";
+import CustomIcon from "../shared/CustomIcon";
 
 export default function ThemeChangeButton() {
   const { theme, toggleTheme } = useThemeContext();
