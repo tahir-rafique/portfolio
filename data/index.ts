@@ -139,6 +139,16 @@ const LandingPageData = {
       icon: "/icons/skills/supabase.svg",
       label: "SUPABASE",
     },
+    {
+      id: 17,
+      icon: "/icons/skills/git.svg",
+      label: "GIT",
+    },
+    {
+      id: 18,
+      icon: "/icons/skills/github.svg",
+      label: "GITHUB",
+    },
   ],
 
   //   landing/contact-details
