@@ -51,7 +51,7 @@ export interface ButtonProps {
   className?: string;
 }
 
-// types/titleText.tsx
+// types/TitleText.tsx
 export interface TitleTextProps {
   title?: string;
   icon: LucideIcon;
@@ -59,7 +59,7 @@ export interface TitleTextProps {
 
 
 
-// types/paraText.tsx
+// types/ParaText.tsx
 export interface ParaTextProps {
   text: string;
   className?: string;

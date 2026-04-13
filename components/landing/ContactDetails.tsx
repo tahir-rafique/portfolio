@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import TitleText from "../ui/TitleText";
-import { BriefcaseBusiness, ContactRound } from "lucide-react";
+import { ContactRound } from "lucide-react";
 import { LandingPageData } from "@/data";
-import ParaText from "../ui/paraText";
+import ParaText from "../ui/ParaText";
 
 export default function ContactDetails() {
   return (
