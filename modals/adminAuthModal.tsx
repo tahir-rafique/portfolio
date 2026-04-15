@@ -95,7 +95,7 @@ const PasswordInputForm: FC<PasswordInputFormProps> = ({
   onTogglePassword,
   onSubmit,
 }) => {
-  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>): void => {
+  const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === "Enter") {
       onSubmit();
     }
@@ -110,7 +110,7 @@ const PasswordInputForm: FC<PasswordInputFormProps> = ({
           className="outline-none border border-gray-300 p-2 rounded-primary w-full px-4 pr-10 focus:border-primary focus:ring-1 focus: ring-primary transition-colors"
           value={adminPassword}
           onChange={onPasswordChange}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyDown}
           autoFocus
           aria-label="Admin password"
         />
