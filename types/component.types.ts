@@ -1,5 +1,5 @@
 import { LucideIcon } from "lucide-react";
-import { ChangeEvent, KeyboardEvent } from "react";
+import { ChangeEvent } from "react";
 
 // types/iconTypes
 export interface IconTypes {

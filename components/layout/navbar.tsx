@@ -1,9 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { LandingPageData } from "@/data";
-import ThemeChangeButton from "../ui/ThemeChangeButton";
 import AdminAuthModal from "@/modals/adminAuthModal";
 import Button from "../shared/Button";
+import ThemeSwitcher from "../ui/ThemeSwitcher";
 
 export default function Navbar() {
   const [openAdminAuthModal, setOpenAdminAuthModal] = useState(false);
@@ -49,7 +49,7 @@ export default function Navbar() {
           text="Admin"
           className="bg-primary py-1 px-3 rounded-primary text-white font-semibold cursor-pointer hover:shadow-sm transition-all duration-100 hover:bg-primary/70 hover:text-text-heading"
         />
-        <ThemeChangeButton />
+        <ThemeSwitcher />
       </div>
 
       <AdminAuthModal

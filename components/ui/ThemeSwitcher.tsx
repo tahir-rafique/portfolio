@@ -3,7 +3,7 @@ import { useThemeContext } from "@/hooks/useThemeContext";
 import { Moon, Sun } from "lucide-react";
 import CustomIcon from "../shared/CustomIcon";
 
-export default function ThemeChangeButton() {
+export default function ThemeSwitcher() {
   const { theme, toggleTheme } = useThemeContext();
 
   return (

@@ -7,13 +7,11 @@ import {
   LogOut,
   PersonStanding,
 } from "lucide-react";
-import { useThemeContext } from "@/hooks/useThemeContext";
-import ThemeChangeButton from "../ui/ThemeChangeButton";
 import CustomIcon from "../shared/CustomIcon";
 import Link from "next/link";
+import ThemeSwitcher from "../ui/ThemeSwitcher";
 
 export default function AdminSidebar() {
-  const { theme, toggleTheme } = useThemeContext();
   const {
     adminNavLink,
     setAdminNavLink,
@@ -56,8 +54,8 @@ export default function AdminSidebar() {
                 <li
                   key={navlink.id}
                   className={`text-xl font-inter leading-[140%] rounded-lg p-2 flex items-center gap-3 cursor-pointer transition-all duration-75 ${adminNavLink === navlink.label
-                      ? "bg-primary text-white font-medium"
-                      : "hover:bg-primary hover:text-white"
+                    ? "bg-primary text-white font-medium"
+                    : "hover:bg-primary hover:text-white"
                     }  ${openAdminSidebar
                       ? " justify-center w-full min-w-[50px] min-h-[50px]"
                       : ""
@@ -88,11 +86,8 @@ export default function AdminSidebar() {
         </div>
 
         <div className=" flex justify-center items-center gap-2">
-          <ThemeChangeButton />
-          <p
-            className={` text-center text-sm font-satoshi font-medium ${openAdminSidebar ? " hidden" : ""
-              }`}
-          >
+          <ThemeSwitcher />
+          <p className={`text-center text-sm font-satoshi font-medium ${openAdminSidebar ? " hidden" : ""}`}>
             Created by @Tahir!
           </p>
         </div>
