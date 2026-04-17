@@ -57,8 +57,6 @@ export interface TitleTextProps {
   icon: LucideIcon;
 }
 
-
-
 // types/ParaText.tsx
 export interface ParaTextProps {
   text: string;

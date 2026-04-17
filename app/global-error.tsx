@@ -10,7 +10,6 @@ export default function Error({
   return (
     <div className="flex flex-col justify-center min-h-dvh w-full overflow-hidden relative p-4 bg-background">
       <div className="text-center space-y-6">
-
         <h1 className="text-3xl font-bold">Something broke 😵</h1>
 
         <p className="text-text/70">
@@ -32,7 +31,6 @@ export default function Error({
             Go Home
           </button>
         </div>
-
       </div>
     </div>
   );

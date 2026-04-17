@@ -1,11 +1,11 @@
 import { MyParticle } from "@/components/ui/MyParticle";
-import LandingHero from "@/components/landing/LandingHero";
-import WorkExperience from "@/components/landing/WorkExperience";
-import Skills from "@/components/landing/Skills";
-import Projects from "@/components/landing/Projects";
-import ContactDetails from "@/components/landing/ContactDetails";
-import Certification from "@/components/landing/Certification";
-import Education from "@/components/landing/Education";
+import LandingHero from "@/pages/landing/LandingHero";
+import WorkExperience from "@/pages/landing/WorkExperience";
+import Skills from "@/pages/landing/Skills";
+import Projects from "@/pages/landing/Projects";
+import ContactDetails from "@/pages/landing/ContactDetails";
+import Certification from "@/pages/landing/Certification";
+import Education from "@/pages/landing/Education";
 
 export default function Page() {
   return (
@@ -28,4 +28,3 @@ export default function Page() {
     </main>
   );
 }
-

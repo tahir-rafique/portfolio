@@ -23,10 +23,11 @@ export default function Navbar() {
   return (
     <nav
       aria-label="navbar"
-      className={`container flex items-center justify-between sticky top-4 z-999 py-4! rounded-secondary transition-all duration-10800 ease-out ${scrolled
-        ? " bg-background/80 border  shadow-primary"
-        : " border border-transparent!"
-        }`}
+      className={`container flex items-center justify-between sticky top-4 z-999 py-4! rounded-secondary transition-all duration-10800 ease-out ${
+        scrolled
+          ? " bg-background/80 border  shadow-primary"
+          : " border border-transparent!"
+      }`}
     >
       <div className="flex items-end">
         <h1 className="text-[clamp(0.8rem,5vw,1.6rem)] font-black leading-[110%] capitalize">

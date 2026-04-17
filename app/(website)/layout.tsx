@@ -7,9 +7,7 @@ export default function LandingLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <section
-      aria-label="main-layout"
-      className="h-full w-full bg-background">
+    <section aria-label="main-layout" className="h-full w-full bg-background">
       <Navbar />
       {children}
     </section>

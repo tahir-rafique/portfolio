@@ -1,17 +1,12 @@
-import React from "react";
 import Image from "next/image";
-import Button from "../shared/Button";
+import Button from "@/components/shared/Button";
 
 export default function LandingHero() {
   return (
     <section aria-label="hero-section" className=" flex flex-col gap-10">
       {/* Tahir Image */}
       <div className="relative h-80 w-80 sm:h-120  sm:w-120 mx-auto">
-        <Image
-          src={"/images/TahirImage.png"}
-          fill
-          alt="tahir-image"
-        />
+        <Image src={"/images/TahirImage.png"} fill alt="tahir-image" />
       </div>
 
       <div className=" space-y-2">

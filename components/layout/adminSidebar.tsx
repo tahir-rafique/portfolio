@@ -22,8 +22,9 @@ export default function AdminSidebar() {
   return (
     <aside
       aria-label="admin-sidebar"
-      className={`bg-background transition-all duration-300 ${openAdminSidebar ? "w-[100px]!" : ""
-        } h-full w-full max-w-[250px] max-lg:rounded-l-none! max-lg:border-r rounded-secondary p-3 relative max-lg:fixed top-0 bottom-0 left-0 `}
+      className={`bg-background transition-all duration-300 ${
+        openAdminSidebar ? "w-[100px]!" : ""
+      } h-full w-full max-w-[250px] max-lg:rounded-l-none! max-lg:border-r rounded-secondary p-3 relative max-lg:fixed top-0 bottom-0 left-0 `}
     >
       <button
         aria-label="toggle-sidebar"
@@ -53,13 +54,15 @@ export default function AdminSidebar() {
               return (
                 <li
                   key={navlink.id}
-                  className={`text-xl font-inter leading-[140%] rounded-lg p-2 flex items-center gap-3 cursor-pointer transition-all duration-75 ${adminNavLink === navlink.label
-                    ? "bg-primary text-white font-medium"
-                    : "hover:bg-primary hover:text-white"
-                    }  ${openAdminSidebar
+                  className={`text-xl font-inter leading-[140%] rounded-lg p-2 flex items-center gap-3 cursor-pointer transition-all duration-75 ${
+                    adminNavLink === navlink.label
+                      ? "bg-primary text-white font-medium"
+                      : "hover:bg-primary hover:text-white"
+                  }  ${
+                    openAdminSidebar
                       ? " justify-center w-full min-w-[50px] min-h-[50px]"
                       : ""
-                    } `}
+                  } `}
                   onClick={() => setAdminNavLink(navlink.label)}
                 >
                   <CustomIcon iconName={navlink.icon} className={`size-6`} />
@@ -87,7 +90,9 @@ export default function AdminSidebar() {
 
         <div className=" flex justify-center items-center gap-2">
           <ThemeSwitcher />
-          <p className={`text-center text-sm font-satoshi font-medium ${openAdminSidebar ? " hidden" : ""}`}>
+          <p
+            className={`text-center text-sm font-satoshi font-medium ${openAdminSidebar ? " hidden" : ""}`}
+          >
             Created by @Tahir!
           </p>
         </div>

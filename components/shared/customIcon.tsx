@@ -5,7 +5,5 @@ export default function CustomIcon({
   className = "",
   onClick,
 }: IconTypes) {
-  return (
-    <CustomIcon className={`size-5 ${className}`} onClick={onClick} />
-  )
+  return <CustomIcon className={`size-5 ${className}`} onClick={onClick} />;
 }

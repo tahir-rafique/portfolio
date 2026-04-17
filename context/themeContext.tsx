@@ -4,7 +4,7 @@ import { createContext, useState, useEffect, ReactNode } from "react";
 import { Theme, ThemeContextType } from "@/types";
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(
-  undefined
+  undefined,
 );
 
 export function ThemeProvider({ children }: { children: ReactNode }) {

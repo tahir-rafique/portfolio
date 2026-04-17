@@ -1,8 +1,17 @@
-import { LayoutDashboard, User, BarChart3, Settings, Mail, Linkedin, Instagram, Github } from "lucide-react";
+import {
+  LayoutDashboard,
+  User,
+  BarChart3,
+  Settings,
+  Mail,
+  Linkedin,
+  Instagram,
+  Github,
+} from "lucide-react";
 
-//    ---------------------------------    
-//            Admin Data  
-//  ----------------------------------- 
+//    ---------------------------------
+//            Admin Data
+//  -----------------------------------
 const AdminData = {
   adminSidebarLinks: [
     {
@@ -28,13 +37,11 @@ const AdminData = {
   ],
 };
 
-//    ---------------------------------------    
-//              Landing Page Data 
-//   ---------------------------------------- 
+//    ---------------------------------------
+//              Landing Page Data
+//   ----------------------------------------
 
 const LandingPageData = {
-
-
   // landing-page
 
   //   landing/navbar
@@ -174,8 +181,7 @@ const LandingPageData = {
       icon: Github,
       href: "/",
     },
-
-  ]
+  ],
 };
 
 export { AdminData, LandingPageData };

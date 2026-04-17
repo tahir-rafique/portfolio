@@ -32,9 +32,7 @@ export default function Button({
       className={` ${getVariantClasses()} ${className} ${loading ? "cursor-wait" : ""}`}
       disabled={disabled || loading}
     >
-      {loading && (
-        <CustomIcon iconName={Badge} className="animate-spin " />
-      )}
+      {loading && <CustomIcon iconName={Badge} className="animate-spin " />}
 
       {iconImgStart && (
         <Image

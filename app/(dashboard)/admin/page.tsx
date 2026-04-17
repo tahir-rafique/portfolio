@@ -32,10 +32,10 @@
 
 "use client";
 import { useAdminContext } from "@/hooks/useAdminContext";
-import AdminDashboard from "@/components/admin/AdminDashboard";
-import AdminProfile from "@/components/admin/AdminProfile";
-import AdminAnalytics from "@/components/admin/AdminAnalytics";
-import AdminSettings from "@/components/admin/AdminSettings";
+import AdminDashboard from "@/pages/admin/AdminDashboard";
+import AdminProfile from "@/pages/admin/AdminProfile";
+import AdminAnalytics from "@/pages/admin/AdminAnalytics";
+import AdminSettings from "@/pages/admin/AdminSettings";
 
 const ADMIN_COMPONENTS: Record<string, React.ComponentType> = {
   Dashboard: AdminDashboard,

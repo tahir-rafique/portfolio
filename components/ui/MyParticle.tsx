@@ -69,7 +69,7 @@ export const MyParticle = () => {
       pauseOnBlur: true,
       pauseOnOutsideViewport: true,
     }),
-    []
+    [],
   );
 
   if (init) {

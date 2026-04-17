@@ -65,8 +65,12 @@
 
 /* basic styles */
 * {
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    fill 0.3s ease,
+    stroke 0.3s ease;
 }
 
 img {
@@ -76,7 +80,9 @@ img {
 body {
   font-family: var(--font-satoshi);
   color: var(--text-heading);
-  cursor: url('/icons/grab-hand-cursor.svg') 4 4, auto !important;
+  cursor:
+    url("/icons/grab-hand-cursor.svg") 4 4,
+    auto !important;
   /* Custom cursor size must be less then 128x128 ✅*/
 }
 
