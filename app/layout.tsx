@@ -1,7 +1,7 @@
 import { satoshi, inter } from "@/fonts/fonts";
 import "../styles/globals.css";
 import React from "react";
-import AdminContextProvider from "@/context/adminContextProvider";
+import AdminContextProvider from "@/context/adminContext";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/themeContext";
 
